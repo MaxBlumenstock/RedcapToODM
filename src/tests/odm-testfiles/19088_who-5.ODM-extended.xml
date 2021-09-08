@@ -1,0 +1,2839 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ODM CreationDateTime='2016-12-05T10:06:41+01:00'
+     Description='WHO (Five) Well-Being Index'
+     FileOID='1.3.6.1.4.1.13158.101.4.141022090424' FileType='Snapshot'
+     ODMVersion='1.3' SourceSystem='ODMedit'
+     xmlns='http://www.cdisc.org/ns/odm/v1.3'>
+    <Study OID='S.0000'>
+        <GlobalVariables>
+            <StudyName>WHO-5</StudyName>
+            <StudyDescription>WHO (Five) Well-Being Index (1998 version)&#13;
+                http://www.who-5.org&#13;
+                Also called : WHO Five, WHO 5
+            </StudyDescription>
+            <ProtocolName>Test Protocol</ProtocolName>
+        </GlobalVariables>
+        <BasicDefinitions>
+        </BasicDefinitions>
+        <MetaDataVersion Name='Metadataversion' OID='MD.0000'>
+            <Protocol>
+                <StudyEventRef Mandatory='Yes' OrderNumber='1'
+                               StudyEventOID='SE.0000'/>
+            </Protocol>
+            <StudyEventDef Name='ODM-Test' OID='SE.0000' Repeating='No'
+                           Type='Unscheduled'>
+                <FormRef FormOID='F.0000' Mandatory='No' OrderNumber='1'/>
+            </StudyEventDef>
+            <FormDef Name='WHO (Five) Well-Being Index' OID='F.0000'
+                     Repeating='No'>
+                <ItemGroupRef ItemGroupOID='IG.0001' Mandatory='Yes'
+                              OrderNumber='1'/>
+            </FormDef>
+            <ItemGroupDef Comment='' Name='Over the last two weeks'
+                          OID='IG.0001' Repeating='No'>
+                <Description>
+                    <TranslatedText xml:lang='en'>Over the last two weeks
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>In den letzten zwei Wochen
+                        ...
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Au cours des deux dernières
+                        semaines
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Nelle ultime due settimane
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>V posledních dvou týdnech
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Durante las últimas dos
+                        semanas:
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Durante as últimas duas
+                        semanas
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Gedurende de laatste twee
+                        weken
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>最近2 週間，私は・・</TranslatedText>
+                    <TranslatedText xml:lang='pl'>W ciągu ostatnich dwóch
+                        tygodni
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Viimeisen kahden viikon
+                        aikana:
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Son iki hafta boyunca
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Under de senaste 2 veckorna
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Gjate dy javeve te fundit
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>през последните две седмици
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>I de sidste 2 uger …
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Κατά τις δύο τελευταίες
+                        εβδομάδες:
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Az elmúlt 2 hét során
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Sí›astli›nar tvær vikur
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Per pastarąsias dvi savaites
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>Ultimele doua saptamani
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Последние две недели
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>V zadnjih dveh tednih sem
+                        se/je bil
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ภายใน 2 สัปดาห์ที่ผ่านมา:
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Sa nakalipas na dalawang
+                        linggo
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>I de siste to ukene har jeg
+                        …
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ባለፉት ሁለት ሳምንታት
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>过去两个星期里</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Zaidi ya wiki mbili
+                        zilizopita
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bn'>গত দুই সপ্তাহ ধরে
+                    </TranslatedText>
+                </Description>
+                <ItemRef ItemOID='I.1001' Mandatory='Yes' OrderNumber='1'/>
+                <ItemRef ItemOID='I.1' Mandatory='Yes' OrderNumber='2'/>
+                <ItemRef ItemOID='I.2' Mandatory='Yes' OrderNumber='3'/>
+                <ItemRef ItemOID='I.3' Mandatory='Yes' OrderNumber='4'/>
+                <ItemRef ItemOID='I.4' Mandatory='Yes' OrderNumber='5'/>
+                <Alias Context='UMLS CUI-1' Name='C1442457'/>
+            </ItemGroupDef>
+            <ItemDef DataType='integer' Name='Lately cheerful' OID='I.1001'
+                     Length="100">
+                <Description>
+                    <TranslatedText xml:lang='en'>I have felt cheerful and in
+                        good spirits
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… war ich froh und guter
+                        Laune
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis senti(e) bien et de
+                        bonne humeur
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono sentito/a allegro/a e
+                        di buon umore
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Byl/a jsem veselý/á a v dobré
+                        náladě
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he sentido alegre y de buen
+                        humor
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Senti-me alegre e bem
+                        disposto/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me vrolijk en in een
+                        opperbeste stemming
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>明るく，楽しい気分で過ご した。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Czułam się wesoła/Czułem się
+                        wesoły i w dobrym nastroju
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Olen ollut iloinen ja
+                        hyväntuulinen
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Kendimi neşeli ve keyifli
+                        hissettim
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig glad och på
+                        gott humör
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere gezueshem dhe ne
+                        gjendje te mire shpirterore
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се весел и в добро
+                        настроение
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har jeg været glad og i
+                        godt humør
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Αισθανόμουν χαρούμενος και με
+                        καλή διάθεση
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Vidámnak és jókedvünek éreztem
+                        magam.
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef veri› glö› / gla›ur og
+                        í gó›u skapi
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Jaučiausi linksmas ir pakilios
+                        nuotaikos
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit vesel(a) si bine
+                        dispus(a)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я чувствую себя бодрой(-ым) и
+                        в хорошем настроении
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>počutil(a) vedro in dobre
+                        volje
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันรู้สึกเบิกบานและอ ารมณ์ดี
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Ako’y nakaramdam ng saya at
+                        sigla
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg glad og i godt
+                        humør
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ደስተኛነትና መንፈሰ ጠንካራነት ይሰማኛል
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我感觉快乐，心情舒畅</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Mimi kuwa waliona kwa moyo
+                        mkunjufu na katika roho nzuri
+                    </TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang='en'>I have felt cheerful and in
+                        good spirits
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… war ich froh und guter
+                        Laune
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis senti(e) bien et de
+                        bonne humeur
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono sentito/a allegro/a e
+                        di buon umore
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Byl/a jsem veselý/á a v dobré
+                        náladě
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he sentido alegre y de buen
+                        humor
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Senti-me alegre e bem
+                        disposto/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me vrolijk en in een
+                        opperbeste stemming
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>明るく，楽しい気分で過ご した。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Czułam się wesoła/Czułem się
+                        wesoły i w dobrym nastroju
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Olen ollut iloinen ja
+                        hyväntuulinen
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Kendimi neşeli ve keyifli
+                        hissettim
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig glad och på
+                        gott humör
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere gezueshem dhe ne
+                        gjendje te mire shpirterore
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се весел и в добро
+                        настроение
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har jeg været glad og i
+                        godt humør
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Αισθανόμουν χαρούμενος και με
+                        καλή διάθεση
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Vidámnak és jókedvünek éreztem
+                        magam.
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef veri› glö› / gla›ur og
+                        í gó›u skapi
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Jaučiausi linksmas ir pakilios
+                        nuotaikos
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit vesel(a) si bine
+                        dispus(a)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я чувствую себя бодрой(-ым) и
+                        в хорошем настроении
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>počutil(a) vedro in dobre
+                        volje
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันรู้สึกเบิกบานและอ ารมณ์ดี
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Ako’y nakaramdam ng saya at
+                        sigla
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg glad og i godt
+                        humør
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ደስተኛነትና መንፈሰ ጠንካራነት ይሰማኛል
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我感觉快乐，心情舒畅</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Mimi kuwa waliona kwa moyo
+                        mkunjufu na katika roho nzuri
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bn'>আমি উৎফুল্ল এবং আনন্দ অনুভব
+                        করেছি
+                    </TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID='CL.1'/>
+                <Alias Context='UMLS CUI [1]' Name='C3261637'/>
+            </ItemDef>
+            <ItemDef DataType='integer' Name='Lately relaxed' OID='I.1'>
+                <Description>
+                    <TranslatedText xml:lang='en'>I have felt calm and relaxed
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… habe ich mich ruhig und
+                        entspannt gefühlt
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis senti(e) calme et
+                        tranquille
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono sentito/a calmo/a e
+                        rilassato/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Byl/a jsem klidný/á a
+                        uvolněný/á
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he sentido tranquilo y
+                        relajado
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Senti-me calmo/a e
+                        tranquilo/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me rustig en
+                        ontspannen
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>落ち着いた、リラックスし た気分で過ごした。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Czułam się spokojna i
+                        odprężona/Czułem się spokojny i odprężony
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Olen ollut levollinen ja
+                        rentoutunut
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Kendimi sakin ve gevşemiş
+                        hissettim
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig lugn och
+                        avslappnad
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere i qete dhe i
+                        relaksuar
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се спокоен и
+                        отпочинал
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har jeg følt mig rolig og
+                        afslappet
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Αισθανόμουν ήρεμος και
+                        γαλήνιος
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Nyugodtnak és relaxáltnak
+                        éreztem magma
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef veri› róleg(ur) og
+                        afslöppu› / afslappa›ur
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Jaučiausi ramus ir
+                        atsipalaidavęs
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit calma si
+                        relaxata
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я чувствую себя спокойной(-ым)
+                        и раскованной(-ым).
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>počutil(a) pomirjeno in
+                        sproščeno
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันรู้สึกสงบและผ่อน คลาย
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Ako’y nakaramdam ng kapayapaan
+                        at katiwasayan
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg rolig og avslappet
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>የተረጋጋ እና ዘና ያለ ስሜት ይሰማኛል
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我感觉宁静和放松</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Mimi kuwa waliona utulivu na
+                        walishirikiana
+                    </TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang='en'>I have felt calm and relaxed
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… habe ich mich ruhig und
+                        entspannt gefühlt
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis senti(e) calme et
+                        tranquille
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono sentito/a calmo/a e
+                        rilassato/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Byl/a jsem klidný/á a
+                        uvolněný/á
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he sentido tranquilo y
+                        relajado
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Senti-me calmo/a e
+                        tranquilo/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me rustig en
+                        ontspannen
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>落ち着いた、リラックスし た気分で過ごした。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Czułam się spokojna i
+                        odprężona/Czułem się spokojny i odprężony
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Olen ollut levollinen ja
+                        rentoutunut
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Kendimi sakin ve gevşemiş
+                        hissettim
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig lugn och
+                        avslappnad
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere i qete dhe i
+                        relaksuar
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се спокоен и
+                        отпочинал
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har jeg følt mig rolig og
+                        afslappet
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Αισθανόμουν ήρεμος και
+                        γαλήνιος
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Nyugodtnak és relaxáltnak
+                        éreztem magma
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef veri› róleg(ur) og
+                        afslöppu› / afslappa›ur
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Jaučiausi ramus ir
+                        atsipalaidavęs
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit calma si
+                        relaxata
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я чувствую себя спокойной(-ым)
+                        и раскованной(-ым).
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>počutil(a) pomirjeno in
+                        sproščeno
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันรู้สึกสงบและผ่อน คลาย
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Ako’y nakaramdam ng kapayapaan
+                        at katiwasayan
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg rolig og avslappet
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>የተረጋጋ እና ዘና ያለ ስሜት ይሰማኛል
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我感觉宁静和放松</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Mimi kuwa waliona utulivu na
+                        walishirikiana
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bn'>আমি শান্ত এবং স্বচ্ছন্দ অনুভব
+                        করেছি
+                    </TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID='CL.2'/>
+                <Alias Context='UMLS CUI [1]' Name='C3261651'/>
+            </ItemDef>
+            <ItemDef DataType='integer' Name='Lately active and vigorous'
+                     OID='I.2'>
+                <Description>
+                    <TranslatedText xml:lang='en'>I have felt active and
+                        vigorous
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… habe ich mich energisch und
+                        aktiv gefühlt
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis senti(e) plein(e)
+                        d’énergie et vigoureux(se)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono sentito/a attivo/a ed
+                        energico/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Byl/a jsem aktivní a plný/á
+                        elánu
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he sentido activo y
+                        enérgico
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Senti-me activo/a e
+                        enérgico/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me actief en
+                        doelbewust
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>意欲的で，活動的に過ごし た。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Czułam się aktywna i
+                        energiczna/Czułem się aktywny i energiczny
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Olen ollut toimelias ja
+                        tarmokas
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Kendimi aktif ve dinç
+                        hissettim
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig aktiv och
+                        kraftfull
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere aktiv dhe teper i
+                        gjalle
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се жизнен и
+                        енергичен
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har jeg følt mig aktiv og
+                        energisk
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Ένοιωθα ενεργητικός,
+                        δραστήριος και ακμαίος
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Aktívnak és élénknek éreztem
+                        magma
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef veri› i›in(n) og
+                        full(ur) orku
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Jaučiausi aktyvus ir
+                        energingas
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit activ(a) si in
+                        putere
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я чувствую себя активной(-ым)
+                        и энергичной(-ым).
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>počutil(a) živahno in poln(a)
+                        energije
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันรู้สึกกระฉับกระเฉ
+                        งและมีพลัง
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Ako’y naging aktibo at
+                        masigasig
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg aktiv og sterk
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ንቁ እና የሙሉነት ስሜት ይሰማኛል
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我感觉充满活力、精力充沛</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Mimi kuwa waliona kazi na
+                        kraftfulla
+                    </TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang='en'>I have felt active and
+                        vigorous
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… habe ich mich energisch und
+                        aktiv gefühlt
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis senti(e) plein(e)
+                        d’énergie et vigoureux(se)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono sentito/a attivo/a ed
+                        energico/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Byl/a jsem aktivní a plný/á
+                        elánu
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he sentido activo y
+                        enérgico
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Senti-me activo/a e
+                        enérgico/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me actief en
+                        doelbewust
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>意欲的で，活動的に過ごし た。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Czułam się aktywna i
+                        energiczna/Czułem się aktywny i energiczny
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Olen ollut toimelias ja
+                        tarmokas
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Kendimi aktif ve dinç
+                        hissettim
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig aktiv och
+                        kraftfull
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere aktiv dhe teper i
+                        gjalle
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се жизнен и
+                        енергичен
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har jeg følt mig aktiv og
+                        energisk
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Ένοιωθα ενεργητικός,
+                        δραστήριος και ακμαίος
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Aktívnak és élénknek éreztem
+                        magma
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef veri› i›in(n) og
+                        full(ur) orku
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Jaučiausi aktyvus ir
+                        energingas
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit activ(a) si in
+                        putere
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я чувствую себя активной(-ым)
+                        и энергичной(-ым).
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>počutil(a) živahno in poln(a)
+                        energije
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันรู้สึกกระฉับกระเฉ
+                        งและมีพลัง
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Ako’y naging aktibo at
+                        masigasig
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg aktiv og sterk
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ንቁ እና የሙሉነት ስሜት ይሰማኛል
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我感觉充满活力、精力充沛</TranslatedText>
+                    <TranslatedText xml:lang='sw'>Mimi kuwa waliona kazi na
+                        kraftfulla
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bn'>আমি সক্রিয় ও সবল অনুভব
+                        করেছি
+                    </TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID='CL.3'/>
+                <Alias Context='UMLS CUI [1]' Name='C3842459'/>
+            </ItemDef>
+            <ItemDef DataType='integer' Name='Lately slept well' OID='I.3'>
+                <Description>
+                    <TranslatedText xml:lang='en'>I woke up feeling fresh and
+                        rested
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… habe ich mich beim Aufwachen
+                        frisch und ausgeruht gefühlt
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis réveillé(e) en me
+                        sentant frais(che) et dispos(e)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono svegliato/a sentendomi
+                        fresco/a e riposato/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Probouzel/a jsem se osvěžený/á
+                        a odpočinutý/á
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he despertado fresco y
+                        descandado
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Acordei a sentir-me fresco/a e
+                        repousado/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me fris en uitgerust
+                        wanneer ik wakker werd
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>ぐっすりと休め，気持ちよ くめざめた。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Budziłam się z uczuciem
+                        świeżości i wypoczęta /Budziłem się z uczuciem świeżości
+                        i wypoczęty
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Herätessäni olen tuntenut
+                        itseni virkeäksi ja levänneeksi
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Sabahları kendimi taze ve
+                        dinlenmiş hissederek uyandım
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig pigg och
+                        utvilad när jag vaknat
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere i fresket dhe i
+                        qete kur u zgjova ne mengjez
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се бодър и отпочинал
+                        при събуждане
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. er jeg vågnet frisk og
+                        udhvilet
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Ξυπνώντας ένοιωθα φρέσκος και
+                        ξεκούραστος
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Ébredéskor frissnek és
+                        kipihentnek éreztem magam.
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef vakna› hress og vel
+                        hvíld(ur)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Atsibudęs jaučiausi žvalus ir
+                        pailsėjęs
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit proaspat(a) si
+                        odihnit(a) la trezire
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я просыпаюсь и чувствую себя
+                        свежей(-им) и отдохнувшей(-им).
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>zbudil(a) svež(a) in
+                        spočit(a)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันตื่นขึ้นมาด้วยควา
+                        มรู้สึกสดชื่นและได้พั กเพียงพอ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Nagising ako nang sariwa at
+                        mahimbing ang tulog
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg opplagt og uthvilt
+                        når jeg våkner
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ምነቃዉ በአዲስና ባረፈ መንፈስ ነዉ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我睡醒时感到清新、得到了足够休息
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sw'>Nilipoamka hisia safi na
+                        ulipatikana
+                    </TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang='en'>I woke up feeling fresh and
+                        rested
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… habe ich mich beim Aufwachen
+                        frisch und ausgeruht gefühlt
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Je me suis réveillé(e) en me
+                        sentant frais(che) et dispos(e)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>Mi sono svegliato/a sentendomi
+                        fresco/a e riposato/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Probouzel/a jsem se osvěžený/á
+                        a odpočinutý/á
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Me he despertado fresco y
+                        descandado
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>Acordei a sentir-me fresco/a e
+                        repousado/a
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Ik voelde me fris en uitgerust
+                        wanneer ik wakker werd
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>ぐっすりと休め，気持ちよ くめざめた。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Budziłam się z uczuciem
+                        świeżości i wypoczęta /Budziłem się z uczuciem świeżości
+                        i wypoczęty
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Herätessäni olen tuntenut
+                        itseni virkeäksi ja levänneeksi
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Sabahları kendimi taze ve
+                        dinlenmiş hissederek uyandım
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Jag har känt mig pigg och
+                        utvilad när jag vaknat
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jam ndjere i fresket dhe i
+                        qete kur u zgjova ne mengjez
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>чувствах се бодър и отпочинал
+                        при събуждане
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. er jeg vågnet frisk og
+                        udhvilet
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Ξυπνώντας ένοιωθα φρέσκος και
+                        ξεκούραστος
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>Ébredéskor frissnek és
+                        kipihentnek éreztem magam.
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Ég hef vakna› hress og vel
+                        hvíld(ur)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Atsibudęs jaučiausi žvalus ir
+                        pailsėjęs
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>M-am simtit proaspat(a) si
+                        odihnit(a) la trezire
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Я просыпаюсь и чувствую себя
+                        свежей(-им) и отдохнувшей(-им).
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>zbudil(a) svež(a) in
+                        spočit(a)
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ฉันตื่นขึ้นมาด้วยควา
+                        มรู้สึกสดชื่นและได้พั กเพียงพอ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Nagising ako nang sariwa at
+                        mahimbing ang tulog
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt meg opplagt og uthvilt
+                        når jeg våkner
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ምነቃዉ በአዲስና ባረፈ መንፈስ ነዉ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我睡醒时感到清新、得到了足够休息
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sw'>Nilipoamka hisia safi na
+                        ulipatikana
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bn'>আমি ঘুম ভাঙ্গার পর তাজা এবং
+                        বিশ্রান্ত অনুভব করেছি
+                    </TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID='CL.4'/>
+                <Alias Context='UMLS CUI [1]' Name='C2984071'/>
+            </ItemDef>
+            <ItemDef DataType='integer' Name='Lately daily life interesting'
+                     OID='I.4'>
+                <Description>
+                    <TranslatedText xml:lang='en'>My daily life has been filled
+                        with things that interest me
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… war mein Alltag voller
+                        Dinge, die mich interessieren
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Ma vie quotidienne a été
+                        remplie de choses intéressantes
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>La mia vita di tutti i giorni
+                        è stata piena di cose che mi interessano
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Můj každodenní život byl
+                        naplněn věcmi, které mne zajímají
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Mi vida cotidiana ha estado
+                        llena de cosas que me interesan
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>O meu dia-a-dia tem sido
+                        preenchido com coisas que me interessam
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Mijn dagelijkse leven was
+                        gevuld met dingen die me interesseren
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>日常生活の中に，興味のあ ることがたくさんあった。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Moje życie codzienne było
+                        wypełnione interesującymi mnie sprawami
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Jokapäiväiseen elämääni on
+                        kuulunut paljon asioita, jotka kiinnostavat minua
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Günlük yaşantım beni
+                        ilgilendiren şeylerle dolu
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Mitt vardagsliv har varit
+                        fyllt av sådant som intresserar mig
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jeta ime e perditeshme ka qene
+                        e mbushur me gjera qe me interesojne
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>Ежедневието ми бе изпълнено с
+                        интересни за мене неща
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har min dagligdag været
+                        fyldt med ting der interesserer mig
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Η καθημερινή μου ζωή ήταν
+                        γεμάτη πράγματα που με ενδιαφέρουν
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>A napjaim teli voltak számomra
+                        érdekes dogokkal
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Daglegt líf mitt hefur veri›
+                        áhugavert
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Mano kasdieniniame gyvenime
+                        buvo daug mane dominančių dalykų
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>Viata mea de zi de zi a fost
+                        plina de lucruri care m-au interesat
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Каждый день со мной происходят
+                        вещи, представляю-щие для меня интерес.
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>moj vsakdan zapolnjen s
+                        stvarmi, ki me zanimajo
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ชีวิตประจำวันของฉั
+                        นเต็มไปด้วยสิ่งที่น่าส นใจ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Napupuno ang bawat araw ko ng
+                        mga bagay na aking kinagigiliwan
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt at mitt daglige liv har
+                        vært fylt av ting som interesserer meg
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ቀናቶቼ በምፈለጋቸዉ ነገሮች የተሞሉ ናቸዉ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我每天生活充满了有趣的事情</TranslatedText>
+                    <TranslatedText xml:lang='sw'>maisha yangu ya kila siku
+                        imekuwa kujazwa na mambo ambayo maslahi yangu
+                    </TranslatedText>
+                </Description>
+                <Question>
+                    <TranslatedText xml:lang='en'>My daily life has been filled
+                        with things that interest me
+                    </TranslatedText>
+                    <TranslatedText xml:lang='de'>… war mein Alltag voller
+                        Dinge, die mich interessieren
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fr'>Ma vie quotidienne a été
+                        remplie de choses intéressantes
+                    </TranslatedText>
+                    <TranslatedText xml:lang='it'>La mia vita di tutti i giorni
+                        è stata piena di cose che mi interessano
+                    </TranslatedText>
+                    <TranslatedText xml:lang='cs'>Můj každodenní život byl
+                        naplněn věcmi, které mne zajímají
+                    </TranslatedText>
+                    <TranslatedText xml:lang='es'>Mi vida cotidiana ha estado
+                        llena de cosas que me interesan
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pt'>O meu dia-a-dia tem sido
+                        preenchido com coisas que me interessam
+                    </TranslatedText>
+                    <TranslatedText xml:lang='nl'>Mijn dagelijkse leven was
+                        gevuld met dingen die me interesseren
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ja'>日常生活の中に，興味のあ ることがたくさんあった。
+                    </TranslatedText>
+                    <TranslatedText xml:lang='pl'>Moje życie codzienne było
+                        wypełnione interesującymi mnie sprawami
+                    </TranslatedText>
+                    <TranslatedText xml:lang='fi'>Jokapäiväiseen elämääni on
+                        kuulunut paljon asioita, jotka kiinnostavat minua
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tr'>Günlük yaşantım beni
+                        ilgilendiren şeylerle dolu
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sv'>Mitt vardagsliv har varit
+                        fyllt av sådant som intresserar mig
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sq'>Jeta ime e perditeshme ka qene
+                        e mbushur me gjera qe me interesojne
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bg'>Ежедневието ми бе изпълнено с
+                        интересни за мене неща
+                    </TranslatedText>
+                    <TranslatedText xml:lang='da'>.. har min dagligdag været
+                        fyldt med ting der interesserer mig
+                    </TranslatedText>
+                    <TranslatedText xml:lang='el'>Η καθημερινή μου ζωή ήταν
+                        γεμάτη πράγματα που με ενδιαφέρουν
+                    </TranslatedText>
+                    <TranslatedText xml:lang='hu'>A napjaim teli voltak számomra
+                        érdekes dogokkal
+                    </TranslatedText>
+                    <TranslatedText xml:lang='is'>Daglegt líf mitt hefur veri›
+                        áhugavert
+                    </TranslatedText>
+                    <TranslatedText xml:lang='lt'>Mano kasdieniniame gyvenime
+                        buvo daug mane dominančių dalykų
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ro'>Viata mea de zi de zi a fost
+                        plina de lucruri care m-au interesat
+                    </TranslatedText>
+                    <TranslatedText xml:lang='ru'>Каждый день со мной происходят
+                        вещи, представляю-щие для меня интерес.
+                    </TranslatedText>
+                    <TranslatedText xml:lang='sl'>moj vsakdan zapolnjen s
+                        stvarmi, ki me zanimajo
+                    </TranslatedText>
+                    <TranslatedText xml:lang='th'>ชีวิตประจำวันของฉั
+                        นเต็มไปด้วยสิ่งที่น่าส นใจ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='tl'>Napupuno ang bawat araw ko ng
+                        mga bagay na aking kinagigiliwan
+                    </TranslatedText>
+                    <TranslatedText xml:lang='no'>følt at mitt daglige liv har
+                        vært fylt av ting som interesserer meg
+                    </TranslatedText>
+                    <TranslatedText xml:lang='am'>ቀናቶቼ በምፈለጋቸዉ ነገሮች የተሞሉ ናቸዉ
+                    </TranslatedText>
+                    <TranslatedText xml:lang='zh'>我每天生活充满了有趣的事情</TranslatedText>
+                    <TranslatedText xml:lang='sw'>maisha yangu ya kila siku
+                        imekuwa kujazwa na mambo ambayo maslahi yangu
+                    </TranslatedText>
+                    <TranslatedText xml:lang='bn'>আমার দৈনন্দিন জীবনে আমি
+                        কৌতূহলতা অনুভব করেছি
+                    </TranslatedText>
+                </Question>
+                <CodeListRef CodeListOID='CL.5'/>
+                <Alias Context='UMLS CUI [1]' Name='C3829819'/>
+            </ItemDef>
+            <CodeList DataType='integer' Name='Lately I felt cheerful'
+                      OID='CL.1'>
+                <CodeListItem CodedValue='5'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>All of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Die ganze Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Tout le Temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Sempre</TranslatedText>
+                        <TranslatedText xml:lang='cs'>celou dobu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Todo el tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Todo o tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Constant</TranslatedText>
+                        <TranslatedText xml:lang='ja'>いつも</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Cały czas</TranslatedText>
+                        <TranslatedText xml:lang='fi'>kaiken aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Her zaman</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Hela tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Gjithe kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през цялото време
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Όλο τον καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Mindig</TranslatedText>
+                        <TranslatedText xml:lang='is'>Alltaf</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Tot timpul
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Все время</TranslatedText>
+                        <TranslatedText xml:lang='sl'>ves čas</TranslatedText>
+                        <TranslatedText xml:lang='th'>ตลอดเวล า</TranslatedText>
+                        <TranslatedText xml:lang='tl'>Nangyar i sa lahat ng
+                            panahon
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ሁልጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>所有时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wote wa wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>সারাক্ষণ</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3812891'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='4'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Most of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Meistens</TranslatedText>
+                        <TranslatedText xml:lang='fr'>La plupart du temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>La maggior parte del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>většinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>La mayor parte del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>A maior parte do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meestal</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほとん どいつ も</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Prawie cały czas
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>enimmän osan aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Çoğu zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mestadels</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Pjesen me te madhe te
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-голяма част от
+                            времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Det meste af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Τον περισσό-τερο καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idö legnagyob b
+                            részében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Oftast</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Beveik visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Majoritatea timpului
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Большую часть времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>večino časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>เป็นส่วนให ญ่
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Parating nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Det meste av tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>በብዛት</TranslatedText>
+                        <TranslatedText xml:lang='zh'>大部分时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Mara nyingi
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অধিকাংশ সময়
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3828954'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='3'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>More than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas mehr als die Hälfte
+                            der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Plus de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Più della metà del tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>více než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Más de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Mais de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meer dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 上の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Więcej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>yli puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            çoğunda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mer än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me shume se gjysmen e
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през повече от половината
+                            от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mere end halvdelen af
+                            tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Περισσό-τερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek több mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Meira en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Daugiau nei pusę to
+                            laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai mult de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Более половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>več kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มากกว่าครึ่ง หนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalas nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mer enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በላይ
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>超过一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Zaidi ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের বেশি সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843271'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='2'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Less than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas weniger als die
+                            Hälfte der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Moins de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Meno della metà del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>méně než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Menos de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Menos de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Minder dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 下の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Mniej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>alle puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            daha azında
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mindre än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me pak se gjysmen e
+                            kohese
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-малко от
+                            половината от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mindre end halvdelen
+                            af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Λιγώτερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek kevesebb mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Minna en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Mažiau nei pusę to laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai putin de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Менее половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>manj kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>น้อยกว่าครึ่ งหนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Minsan nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mindre enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በታች
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>少于一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Chini ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের কম সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843272'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='1'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Some of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Ab und zu</TranslatedText>
+                        <TranslatedText xml:lang='fr'>De temps en temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>A volte</TranslatedText>
+                        <TranslatedText xml:lang='cs'>občas</TranslatedText>
+                        <TranslatedText xml:lang='es'>De vez en cuando
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Alguma s vezes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Soms</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほんの たまに</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Od czasu do czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>pienen osan ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Bazen</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Ibland</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Per disa kohe
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>понякога</TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Κάποιες μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Néha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Stundum</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Kartais</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Cateodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Некоторое время
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>nekaj časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มีบ้าง บางเวลา
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalang nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Av og til</TranslatedText>
+                        <TranslatedText xml:lang='am'>አንዳንድ ጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>有时候</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Baadhi ya wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>মাঝেমাঝে</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3827992'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='0'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>At no time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Zu keinem Zeitpunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Jamais</TranslatedText>
+                        <TranslatedText xml:lang='it'>Mai</TranslatedText>
+                        <TranslatedText xml:lang='cs'>nikdy</TranslatedText>
+                        <TranslatedText xml:lang='es'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='pt'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='nl'>Helemaal niet
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>まった くない</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Nigdy</TranslatedText>
+                        <TranslatedText xml:lang='fi'>en lainkaan
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Hiçbir zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Aldrig</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Asnje-here
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>никога</TranslatedText>
+                        <TranslatedText xml:lang='da'>På intet tidspunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Ποτέ</TranslatedText>
+                        <TranslatedText xml:lang='hu'>Soha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Aldrei</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Niekada</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Niciodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Никогда</TranslatedText>
+                        <TranslatedText xml:lang='sl'>nikoli</TranslatedText>
+                        <TranslatedText xml:lang='th'>ไม่เคยเล ย
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Hindi nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Aldri</TranslatedText>
+                        <TranslatedText xml:lang='am'>ምንም</TranslatedText>
+                        <TranslatedText xml:lang='zh'>从未有过</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wakati huo hakuna
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>কখনই না</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C2003901'/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList DataType='integer'
+                      Name='Lately I was able to be at ease and feel relaxed'
+                      OID='CL.2'>
+                <CodeListItem CodedValue='5'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>All of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Die ganze Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Tout le Temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Sempre</TranslatedText>
+                        <TranslatedText xml:lang='cs'>celou dobu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Todo el tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Todo o tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Constant</TranslatedText>
+                        <TranslatedText xml:lang='ja'>いつも</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Cały czas</TranslatedText>
+                        <TranslatedText xml:lang='fi'>kaiken aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Her zaman</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Hela tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Gjithe kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през цялото време
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Όλο τον καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Mindig</TranslatedText>
+                        <TranslatedText xml:lang='is'>Alltaf</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Tot timpul
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Все время</TranslatedText>
+                        <TranslatedText xml:lang='sl'>ves čas</TranslatedText>
+                        <TranslatedText xml:lang='th'>ตลอดเวล า</TranslatedText>
+                        <TranslatedText xml:lang='tl'>Nangyar i sa lahat ng
+                            panahon
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ሁልጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>所有时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wote wa wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>সারাক্ষণ</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3812891'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='4'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Most of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Meistens</TranslatedText>
+                        <TranslatedText xml:lang='fr'>La plupart du temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>La maggior parte del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>většinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>La mayor parte del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>A maior parte do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meestal</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほとん どいつ も</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Prawie cały czas
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>enimmän osan aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Çoğu zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mestadels</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Pjesen me te madhe te
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-голяма част от
+                            времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Det meste af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Τον περισσό-τερο καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idö legnagyob b
+                            részében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Oftast</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Beveik visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Majoritatea timpului
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Большую часть времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>večino časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>เป็นส่วนให ญ่
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Parating nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Det meste av tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>በብዛት</TranslatedText>
+                        <TranslatedText xml:lang='zh'>大部分时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Mara nyingi
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অধিকাংশ সময়
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3828954'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='3'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>More than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas mehr als die Hälfte
+                            der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Plus de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Più della metà del tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>více než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Más de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Mais de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meer dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 上の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Więcej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>yli puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            çoğunda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mer än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me shume se gjysmen e
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през повече от половината
+                            от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mere end halvdelen af
+                            tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Περισσό-τερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek több mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Meira en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Daugiau nei pusę to
+                            laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai mult de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Более половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>več kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มากกว่าครึ่ง หนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalas nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mer enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በላይ
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>超过一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Zaidi ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের বেশি সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843271'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='2'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Less than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas weniger als die
+                            Hälfte der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Moins de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Meno della metà del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>méně než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Menos de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Menos de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Minder dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 下の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Mniej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>alle puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            daha azında
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mindre än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me pak se gjysmen e
+                            kohese
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-малко от
+                            половината от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mindre end halvdelen
+                            af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Λιγώτερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek kevesebb mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Minna en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Mažiau nei pusę to laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai putin de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Менее половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>manj kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>น้อยกว่าครึ่ งหนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Minsan nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mindre enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በታች
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>少于一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Chini ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের কম সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843272'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='1'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Some of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Ab und zu</TranslatedText>
+                        <TranslatedText xml:lang='fr'>De temps en temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>A volte</TranslatedText>
+                        <TranslatedText xml:lang='cs'>občas</TranslatedText>
+                        <TranslatedText xml:lang='es'>De vez en cuando
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Alguma s vezes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Soms</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほんの たまに</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Od czasu do czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>pienen osan ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Bazen</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Ibland</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Per disa kohe
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>понякога</TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Κάποιες μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Néha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Stundum</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Kartais</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Cateodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Некоторое время
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>nekaj časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มีบ้าง บางเวลา
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalang nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Av og til</TranslatedText>
+                        <TranslatedText xml:lang='am'>አንዳንድ ጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>有时候</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Baadhi ya wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>মাঝেমাঝে</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3827992'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='0'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>At no time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Zu keinem Zeitpunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Jamais</TranslatedText>
+                        <TranslatedText xml:lang='it'>Mai</TranslatedText>
+                        <TranslatedText xml:lang='cs'>nikdy</TranslatedText>
+                        <TranslatedText xml:lang='es'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='pt'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='nl'>Helemaal niet
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>まった くない</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Nigdy</TranslatedText>
+                        <TranslatedText xml:lang='fi'>en lainkaan
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Hiçbir zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Aldrig</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Asnje-here
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>никога</TranslatedText>
+                        <TranslatedText xml:lang='da'>På intet tidspunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Ποτέ</TranslatedText>
+                        <TranslatedText xml:lang='hu'>Soha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Aldrei</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Niekada</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Niciodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Никогда</TranslatedText>
+                        <TranslatedText xml:lang='sl'>nikoli</TranslatedText>
+                        <TranslatedText xml:lang='th'>ไม่เคยเล ย
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Hindi nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Aldri</TranslatedText>
+                        <TranslatedText xml:lang='am'>ምንም</TranslatedText>
+                        <TranslatedText xml:lang='zh'>从未有过</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wakati huo hakuna
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>কখনই না</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C2003901'/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList DataType='integer' Name='Lately active and vigorous'
+                      OID='CL.3'>
+                <CodeListItem CodedValue='5'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>All of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Die ganze Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Tout le Temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Sempre</TranslatedText>
+                        <TranslatedText xml:lang='cs'>celou dobu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Todo el tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Todo o tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Constant</TranslatedText>
+                        <TranslatedText xml:lang='ja'>いつも</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Cały czas</TranslatedText>
+                        <TranslatedText xml:lang='fi'>kaiken aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Her zaman</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Hela tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Gjithe kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през цялото време
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Όλο τον καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Mindig</TranslatedText>
+                        <TranslatedText xml:lang='is'>Alltaf</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Tot timpul
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Все время</TranslatedText>
+                        <TranslatedText xml:lang='sl'>ves čas</TranslatedText>
+                        <TranslatedText xml:lang='th'>ตลอดเวล า</TranslatedText>
+                        <TranslatedText xml:lang='tl'>Nangyar i sa lahat ng
+                            panahon
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ሁልጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>所有时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wote wa wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>সারাক্ষণ</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3812891'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='4'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Most of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Meistens</TranslatedText>
+                        <TranslatedText xml:lang='fr'>La plupart du temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>La maggior parte del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>většinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>La mayor parte del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>A maior parte do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meestal</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほとん どいつ も</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Prawie cały czas
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>enimmän osan aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Çoğu zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mestadels</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Pjesen me te madhe te
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-голяма част от
+                            времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Det meste af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Τον περισσό-τερο καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idö legnagyob b
+                            részében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Oftast</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Beveik visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Majoritatea timpului
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Большую часть времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>večino časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>เป็นส่วนให ญ่
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Parating nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Det meste av tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>በብዛት</TranslatedText>
+                        <TranslatedText xml:lang='zh'>大部分时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Mara nyingi
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অধিকাংশ সময়
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3828954'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='3'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>More than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas mehr als die Hälfte
+                            der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Plus de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Più della metà del tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>více než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Más de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Mais de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meer dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 上の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Więcej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>yli puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            çoğunda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mer än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me shume se gjysmen e
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през повече от половината
+                            от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mere end halvdelen af
+                            tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Περισσό-τερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek több mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Meira en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Daugiau nei pusę to
+                            laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai mult de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Более половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>več kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มากกว่าครึ่ง หนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalas nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mer enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በላይ
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>超过一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Zaidi ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের বেশি সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843271'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='2'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Less than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas weniger als die
+                            Hälfte der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Moins de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Meno della metà del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>méně než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Menos de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Menos de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Minder dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 下の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Mniej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>alle puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            daha azında
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mindre än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me pak se gjysmen e
+                            kohese
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-малко от
+                            половината от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mindre end halvdelen
+                            af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Λιγώτερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek kevesebb mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Minna en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Mažiau nei pusę to laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai putin de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Менее половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>manj kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>น้อยกว่าครึ่ งหนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Minsan nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mindre enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በታች
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>少于一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Chini ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের কম সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843272'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='1'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Some of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Ab und zu</TranslatedText>
+                        <TranslatedText xml:lang='fr'>De temps en temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>A volte</TranslatedText>
+                        <TranslatedText xml:lang='cs'>občas</TranslatedText>
+                        <TranslatedText xml:lang='es'>De vez en cuando
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Alguma s vezes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Soms</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほんの たまに</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Od czasu do czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>pienen osan ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Bazen</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Ibland</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Per disa kohe
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>понякога</TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Κάποιες μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Néha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Stundum</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Kartais</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Cateodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Некоторое время
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>nekaj časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มีบ้าง บางเวลา
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalang nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Av og til</TranslatedText>
+                        <TranslatedText xml:lang='am'>አንዳንድ ጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>有时候</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Baadhi ya wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>মাঝেমাঝে</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3827992'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='0'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>At no time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Zu keinem Zeitpunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Jamais</TranslatedText>
+                        <TranslatedText xml:lang='it'>Mai</TranslatedText>
+                        <TranslatedText xml:lang='cs'>nikdy</TranslatedText>
+                        <TranslatedText xml:lang='es'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='pt'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='nl'>Helemaal niet
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>まった くない</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Nigdy</TranslatedText>
+                        <TranslatedText xml:lang='fi'>en lainkaan
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Hiçbir zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Aldrig</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Asnje-here
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>никога</TranslatedText>
+                        <TranslatedText xml:lang='da'>På intet tidspunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Ποτέ</TranslatedText>
+                        <TranslatedText xml:lang='hu'>Soha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Aldrei</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Niekada</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Niciodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Никогда</TranslatedText>
+                        <TranslatedText xml:lang='sl'>nikoli</TranslatedText>
+                        <TranslatedText xml:lang='th'>ไม่เคยเล ย
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Hindi nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Aldri</TranslatedText>
+                        <TranslatedText xml:lang='am'>ምንም</TranslatedText>
+                        <TranslatedText xml:lang='zh'>从未有过</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wakati huo hakuna
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>কখনই না</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C2003901'/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList DataType='integer' Name='Lately slept well' OID='CL.4'>
+                <CodeListItem CodedValue='5'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>All of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Die ganze Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Tout le Temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Sempre</TranslatedText>
+                        <TranslatedText xml:lang='cs'>celou dobu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Todo el tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Todo o tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Constant</TranslatedText>
+                        <TranslatedText xml:lang='ja'>いつも</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Cały czas</TranslatedText>
+                        <TranslatedText xml:lang='fi'>kaiken aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Her zaman</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Hela tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Gjithe kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през цялото време
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Όλο τον καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Mindig</TranslatedText>
+                        <TranslatedText xml:lang='is'>Alltaf</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Tot timpul
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Все время</TranslatedText>
+                        <TranslatedText xml:lang='sl'>ves čas</TranslatedText>
+                        <TranslatedText xml:lang='th'>ตลอดเวล า</TranslatedText>
+                        <TranslatedText xml:lang='tl'>Nangyar i sa lahat ng
+                            panahon
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ሁልጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>所有时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wote wa wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>সারাক্ষণ</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3812891'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='4'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Most of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Meistens</TranslatedText>
+                        <TranslatedText xml:lang='fr'>La plupart du temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>La maggior parte del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>většinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>La mayor parte del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>A maior parte do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meestal</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほとん どいつ も</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Prawie cały czas
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>enimmän osan aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Çoğu zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mestadels</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Pjesen me te madhe te
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-голяма част от
+                            времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Det meste af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Τον περισσό-τερο καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idö legnagyob b
+                            részében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Oftast</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Beveik visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Majoritatea timpului
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Большую часть времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>večino časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>เป็นส่วนให ญ่
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Parating nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Det meste av tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>በብዛት</TranslatedText>
+                        <TranslatedText xml:lang='zh'>大部分时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Mara nyingi
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অধিকাংশ সময়
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3828954'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='3'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>More than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas mehr als die Hälfte
+                            der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Plus de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Più della metà del tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>více než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Más de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Mais de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meer dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 上の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Więcej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>yli puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            çoğunda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mer än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me shume se gjysmen e
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през повече от половината
+                            от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mere end halvdelen af
+                            tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Περισσό-τερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek több mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Meira en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Daugiau nei pusę to
+                            laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai mult de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Более половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>več kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มากกว่าครึ่ง หนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalas nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mer enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በላይ
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>超过一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Zaidi ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের বেশি সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843271'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='2'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Less than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas weniger als die
+                            Hälfte der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Moins de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Meno della metà del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>méně než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Menos de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Menos de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Minder dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 下の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Mniej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>alle puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            daha azında
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mindre än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me pak se gjysmen e
+                            kohese
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-малко от
+                            половината от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mindre end halvdelen
+                            af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Λιγώτερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek kevesebb mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Minna en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Mažiau nei pusę to laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai putin de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Менее половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>manj kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>น้อยกว่าครึ่ งหนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Minsan nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mindre enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በታች
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>少于一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Chini ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের কম সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843272'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='1'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Some of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Ab und zu</TranslatedText>
+                        <TranslatedText xml:lang='fr'>De temps en temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>A volte</TranslatedText>
+                        <TranslatedText xml:lang='cs'>občas</TranslatedText>
+                        <TranslatedText xml:lang='es'>De vez en cuando
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Alguma s vezes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Soms</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほんの たまに</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Od czasu do czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>pienen osan ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Bazen</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Ibland</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Per disa kohe
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>понякога</TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Κάποιες μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Néha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Stundum</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Kartais</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Cateodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Некоторое время
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>nekaj časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มีบ้าง บางเวลา
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalang nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Av og til</TranslatedText>
+                        <TranslatedText xml:lang='am'>አንዳንድ ጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>有时候</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Baadhi ya wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>মাঝেমাঝে</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3827992'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='0'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>At no time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Zu keinem Zeitpunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Jamais</TranslatedText>
+                        <TranslatedText xml:lang='it'>Mai</TranslatedText>
+                        <TranslatedText xml:lang='cs'>nikdy</TranslatedText>
+                        <TranslatedText xml:lang='es'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='pt'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='nl'>Helemaal niet
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>まった くない</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Nigdy</TranslatedText>
+                        <TranslatedText xml:lang='fi'>en lainkaan
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Hiçbir zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Aldrig</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Asnje-here
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>никога</TranslatedText>
+                        <TranslatedText xml:lang='da'>På intet tidspunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Ποτέ</TranslatedText>
+                        <TranslatedText xml:lang='hu'>Soha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Aldrei</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Niekada</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Niciodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Никогда</TranslatedText>
+                        <TranslatedText xml:lang='sl'>nikoli</TranslatedText>
+                        <TranslatedText xml:lang='th'>ไม่เคยเล ย
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Hindi nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Aldri</TranslatedText>
+                        <TranslatedText xml:lang='am'>ምንም</TranslatedText>
+                        <TranslatedText xml:lang='zh'>从未有过</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wakati huo hakuna
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>কখনই না</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C2003901'/>
+                </CodeListItem>
+            </CodeList>
+            <CodeList DataType='integer' Name='Lately daily life interesting'
+                      OID='CL.5'>
+                <CodeListItem CodedValue='5'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>All of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Die ganze Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Tout le Temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Sempre</TranslatedText>
+                        <TranslatedText xml:lang='cs'>celou dobu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Todo el tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Todo o tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Constant</TranslatedText>
+                        <TranslatedText xml:lang='ja'>いつも</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Cały czas</TranslatedText>
+                        <TranslatedText xml:lang='fi'>kaiken aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Her zaman</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Hela tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Gjithe kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през цялото време
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Όλο τον καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Mindig</TranslatedText>
+                        <TranslatedText xml:lang='is'>Alltaf</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Tot timpul
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Все время</TranslatedText>
+                        <TranslatedText xml:lang='sl'>ves čas</TranslatedText>
+                        <TranslatedText xml:lang='th'>ตลอดเวล า</TranslatedText>
+                        <TranslatedText xml:lang='tl'>Nangyar i sa lahat ng
+                            panahon
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Hele tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ሁልጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>所有时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wote wa wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>সারাক্ষণ</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3812891'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='4'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Most of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Meistens</TranslatedText>
+                        <TranslatedText xml:lang='fr'>La plupart du temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>La maggior parte del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>většinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>La mayor parte del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>A maior parte do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meestal</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほとん どいつ も</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Prawie cały czas
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>enimmän osan aikaa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Çoğu zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mestadels</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Pjesen me te madhe te
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-голяма част от
+                            времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Det meste af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Τον περισσό-τερο καιρό
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idö legnagyob b
+                            részében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Oftast</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Beveik visą laiką
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Majoritatea timpului
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Большую часть времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>večino časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>เป็นส่วนให ญ่
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Parating nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Det meste av tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>በብዛት</TranslatedText>
+                        <TranslatedText xml:lang='zh'>大部分时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Mara nyingi
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অধিকাংশ সময়
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3828954'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='3'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>More than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas mehr als die Hälfte
+                            der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Plus de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Più della metà del tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>více než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Más de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Mais de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Meer dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 上の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Więcej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>yli puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            çoğunda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mer än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me shume se gjysmen e
+                            kohes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през повече от половината
+                            от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mere end halvdelen af
+                            tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Περισσό-τερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek több mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Meira en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Daugiau nei pusę to
+                            laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai mult de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Более половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>več kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มากกว่าครึ่ง หนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalas nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mer enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በላይ
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>超过一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Zaidi ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের বেশি সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843271'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='2'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Less than half of the
+                            time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Etwas weniger als die
+                            Hälfte der Zeit
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Moins de la moitié du
+                            temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>Meno della metà del
+                            tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='cs'>méně než polovinu doby
+                        </TranslatedText>
+                        <TranslatedText xml:lang='es'>Menos de la mitad del
+                            tiempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Menos de metade do tempo
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Minder dan de helft van de
+                            tijd
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>半分以 下の期 間を
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pl'>Mniej niż połowę czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>alle puolet ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Geçen zamanın yarısında n
+                            daha azında
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Mindre än halva tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sq'>Me pak se gjysmen e
+                            kohese
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>през по-малко от
+                            половината от времето
+                        </TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt mindre end halvdelen
+                            af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Λιγώτερο από τις μισές
+                            μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Az idönek kevesebb mint
+                            felében
+                        </TranslatedText>
+                        <TranslatedText xml:lang='is'>Minna en helming tímans
+                        </TranslatedText>
+                        <TranslatedText xml:lang='lt'>Mažiau nei pusę to laiko
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ro'>Mai putin de jumatate din
+                            timp
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ru'>Менее половины времени
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>manj kot polovico časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>น้อยกว่าครึ่ งหนึ่ง
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Minsan nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Mindre enn halve tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='am'>ከግማሽ ጊዚያት በታች
+                        </TranslatedText>
+                        <TranslatedText xml:lang='zh'>少于一半的时间</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Chini ya nusu ya muda
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>অর্ধেকের কম সময় ধরে
+                        </TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3843272'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='1'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>Some of the time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Ab und zu</TranslatedText>
+                        <TranslatedText xml:lang='fr'>De temps en temps
+                        </TranslatedText>
+                        <TranslatedText xml:lang='it'>A volte</TranslatedText>
+                        <TranslatedText xml:lang='cs'>občas</TranslatedText>
+                        <TranslatedText xml:lang='es'>De vez en cuando
+                        </TranslatedText>
+                        <TranslatedText xml:lang='pt'>Alguma s vezes
+                        </TranslatedText>
+                        <TranslatedText xml:lang='nl'>Soms</TranslatedText>
+                        <TranslatedText xml:lang='ja'>ほんの たまに</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Od czasu do czasu
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fi'>pienen osan ajasta
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Bazen</TranslatedText>
+                        <TranslatedText xml:lang='sv'>Ibland</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Per disa kohe
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>понякога</TranslatedText>
+                        <TranslatedText xml:lang='da'>Lidt af tiden
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Κάποιες μέρες
+                        </TranslatedText>
+                        <TranslatedText xml:lang='hu'>Néha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Stundum</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Kartais</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Cateodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Некоторое время
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sl'>nekaj časa
+                        </TranslatedText>
+                        <TranslatedText xml:lang='th'>มีบ้าง บางเวลา
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Madalang nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Av og til</TranslatedText>
+                        <TranslatedText xml:lang='am'>አንዳንድ ጊዜ</TranslatedText>
+                        <TranslatedText xml:lang='zh'>有时候</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Baadhi ya wakati
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>মাঝেমাঝে</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C3827992'/>
+                </CodeListItem>
+                <CodeListItem CodedValue='0'>
+                    <Decode>
+                        <TranslatedText xml:lang='en'>At no time
+                        </TranslatedText>
+                        <TranslatedText xml:lang='de'>Zu keinem Zeitpunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='fr'>Jamais</TranslatedText>
+                        <TranslatedText xml:lang='it'>Mai</TranslatedText>
+                        <TranslatedText xml:lang='cs'>nikdy</TranslatedText>
+                        <TranslatedText xml:lang='es'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='pt'>Nunca</TranslatedText>
+                        <TranslatedText xml:lang='nl'>Helemaal niet
+                        </TranslatedText>
+                        <TranslatedText xml:lang='ja'>まった くない</TranslatedText>
+                        <TranslatedText xml:lang='pl'>Nigdy</TranslatedText>
+                        <TranslatedText xml:lang='fi'>en lainkaan
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tr'>Hiçbir zaman
+                        </TranslatedText>
+                        <TranslatedText xml:lang='sv'>Aldrig</TranslatedText>
+                        <TranslatedText xml:lang='sq'>Asnje-here
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bg'>никога</TranslatedText>
+                        <TranslatedText xml:lang='da'>På intet tidspunkt
+                        </TranslatedText>
+                        <TranslatedText xml:lang='el'>Ποτέ</TranslatedText>
+                        <TranslatedText xml:lang='hu'>Soha</TranslatedText>
+                        <TranslatedText xml:lang='is'>Aldrei</TranslatedText>
+                        <TranslatedText xml:lang='lt'>Niekada</TranslatedText>
+                        <TranslatedText xml:lang='ro'>Niciodata</TranslatedText>
+                        <TranslatedText xml:lang='ru'>Никогда</TranslatedText>
+                        <TranslatedText xml:lang='sl'>nikoli</TranslatedText>
+                        <TranslatedText xml:lang='th'>ไม่เคยเล ย
+                        </TranslatedText>
+                        <TranslatedText xml:lang='tl'>Hindi nangyari
+                        </TranslatedText>
+                        <TranslatedText xml:lang='no'>Aldri</TranslatedText>
+                        <TranslatedText xml:lang='am'>ምንም</TranslatedText>
+                        <TranslatedText xml:lang='zh'>从未有过</TranslatedText>
+                        <TranslatedText xml:lang='sw'>Wakati huo hakuna
+                        </TranslatedText>
+                        <TranslatedText xml:lang='bn'>কখনই না</TranslatedText>
+                    </Decode>
+                    <Alias Context='UMLS CUI-1' Name='C2003901'/>
+                </CodeListItem>
+            </CodeList>
+        </MetaDataVersion>
+    </Study>
+    <AdminData>
+        <User OID='USR.0001'>
+            <FirstName>First</FirstName>
+            <LastName>Last</LastName>
+            <Organization>Organization</Organization>
+        </User>
+    </AdminData>
+</ODM>

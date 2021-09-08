@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="CAS" verbose="1" >
+  <test name="ODMSummaryTest"   >
+  <classes>
+  <class name="de.imi.odmtoolbox.tests.REDCapTest">
+
+    </class>
+    <class name="de.imi.odmtoolbox.tests.OpenClinicaTest"> 
+
+    </class>
+    
+  </classes>
+ 
+ </test>
+</suite>
+

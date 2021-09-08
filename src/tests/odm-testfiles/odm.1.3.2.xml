@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ODM CreationDateTime='2015-10-14T13:17:10+01:00' Description='NCT02391779' FileOID='any OID' FileType='Snapshot' ODMVersion='1.3.2' SourceSystem='ODMedit' xmlns:ns2='http://www.w3.org/2000/09/xmldsig#' xmlns='http://www.cdisc.org/ns/odm/v1.3'>
+  <Study OID='some OID'>
+    <GlobalVariables>
+      <StudyName>Eligibility Hypertension NCT02391779</StudyName>
+      <StudyDescription>Flaxseed Lignan Supplementation in Elderly Participants With Stage I Hypertension; ODM derived from: https://clinicaltrials.gov/show/NCT02391779</StudyDescription>
+      <ProtocolName>NCT02391779</ProtocolName>
+    </GlobalVariables>
+    <MetaDataVersion Name='MetaDataVersion' OID='every OID'>
+      <Protocol>
+        <StudyEventRef Mandatory='Yes' OrderNumber='1' StudyEventOID='SE.1'/>
+      </Protocol>
+      <StudyEventDef Name='Eligibility' OID='SE.1' Repeating='Yes' Type='Unscheduled'>
+        <FormRef FormOID='F.1' Mandatory='No' OrderNumber='1'/>
+      </StudyEventDef>
+      <FormDef Name='Eligibility Hypertension NCT02391779' OID='F.1' Repeating='No'>
+        <ItemGroupRef ItemGroupOID='IG.1' Mandatory='Yes' OrderNumber='1'/>
+        <ItemGroupRef ItemGroupOID='IG.2' Mandatory='Yes' OrderNumber='2'/>
+      </FormDef>
+      <ItemGroupDef Name='Inclusion Criteria' OID='IG.1' Repeating='No'>
+        <ItemRef ItemOID='I.001' Mandatory='Yes' OrderNumber='1'/>
+        <ItemRef ItemOID='I.003' Mandatory='Yes' OrderNumber='3'/>
+        <Alias Context='UMLS CUI' Name='C1512693'/>
+      </ItemGroupDef>
+      <ItemGroupDef Name='Exclusion Criteria' OID='IG.2' Repeating='No'>
+        <ItemRef ItemOID='I.004' Mandatory='Yes' OrderNumber='4'/>
+        <ItemRef ItemOID='I.005' Mandatory='Yes' OrderNumber='5'/>
+        <ItemRef ItemOID='I.006' Mandatory='Yes' OrderNumber='6'/>
+        <ItemRef ItemOID='I.007' Mandatory='Yes' OrderNumber='7'/>
+        <ItemRef ItemOID='I.008' Mandatory='Yes' OrderNumber='8'/>
+        <ItemRef ItemOID='I.009' Mandatory='Yes' OrderNumber='9'/>
+        <ItemRef ItemOID='I.0010' Mandatory='Yes' OrderNumber='10'/>
+        <ItemRef ItemOID='I.0011' Mandatory='Yes' OrderNumber='11'/>
+        <ItemRef ItemOID='I.0012' Mandatory='Yes' OrderNumber='12'/>
+        <ItemRef ItemOID='I.0013' Mandatory='Yes' OrderNumber='13'/>
+        <ItemRef ItemOID='I.0014' Mandatory='Yes' OrderNumber='14'/>
+        <ItemRef ItemOID='I.0015' Mandatory='Yes' OrderNumber='15'/>
+        <ItemRef ItemOID='I.0016' Mandatory='Yes' OrderNumber='16'/>
+        <ItemRef ItemOID='I.0017' Mandatory='Yes' OrderNumber='17'/>
+        <ItemRef ItemOID='I.0018' Mandatory='Yes' OrderNumber='18'/>
+        <ItemRef ItemOID='I.0019' Mandatory='Yes' OrderNumber='19'/>
+        <ItemRef ItemOID='I.0020' Mandatory='Yes' OrderNumber='20'/>
+        <Alias Context='UMLS CUI' Name='C0680251'/>
+      </ItemGroupDef>
+      <ItemDef DataType='boolean' Name='blood pressure' OID='I.001'>
+        <Question>
+          <TranslatedText xml:lang='en'>high normal blood pressure (130/85 - 139/89) or stage i hypertension (140/90 - 150/90)</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0005823'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='Ability' OID='I.003'>
+        <Question>
+          <TranslatedText xml:lang='en'>ability to follow simple instructions</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0085732'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='age' OID='I.004'>
+        <Question>
+          <TranslatedText xml:lang='en'>age below 60 years.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0001779'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='nursing home care' OID='I.005'>
+        <Question>
+          <TranslatedText xml:lang='en'>individuals living in long term care homes.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0260062'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='Walking' OID='I.006'>
+        <Question>
+          <TranslatedText xml:lang='en'>individuals unable to walk for 30 minutes.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0080331'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='diabetes mellitus' OID='I.007'>
+        <Question>
+          <TranslatedText xml:lang='en'>unstable diabetes, or diabetics taking insulin (note: eligible diabetic participants will undergo additional testing during the study ).</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0011849'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='cancer' OID='I.008'>
+        <Question>
+          <TranslatedText xml:lang='en'>current cancer or diagnosed with cancer in the past 2 years.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0006826'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='Gastrointestinal Diseases' OID='I.009'>
+        <Question>
+          <TranslatedText xml:lang='en'>significant liver or other gastrointestinal disorder including inflammatory bowel disease. (while constipation is the most common gastrointestinal problem in the elderly, it would not be a contraindication)</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0017178'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='renal insufficiency' OID='I.0010'>
+        <Question>
+          <TranslatedText xml:lang='en'>significant kidney disorder.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C1565489'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='antibiotics; oral' OID='I.0011'>
+        <Question>
+          <TranslatedText xml:lang='en'>have taken oral antibiotics in the past three months</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0003232'/>
+        <Alias Context='UMLS CUI [2]' Name='C0442027'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='cardiac disease' OID='I.0012'>
+        <Question>
+          <TranslatedText xml:lang='en'>unstable or severe cardiac disease, recent myocardial infarction, or stroke (either in past 6 months or significantly affecting physical mobility).</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0018799'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='disease' OID='I.0013'>
+        <Question>
+          <TranslatedText xml:lang='en'>unstable other medical disease including, but not limited to, pulmonary disorder, epilepsy and genitourinary disorder.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0012634'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='migraine with aura' OID='I.0014'>
+        <Question>
+          <TranslatedText xml:lang='en'>migraine with aura within the last year (as this is a risk factor for stroke).</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0154723'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='Hemorrhage' OID='I.0015'>
+        <Question>
+          <TranslatedText xml:lang='en'>current diagnosis of a bleeding condition, or at risk of bleeding.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0019080'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='Immunocompromised' OID='I.0016'>
+        <Question>
+          <TranslatedText xml:lang='en'>significant immune-compromise.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0085393'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='hormone replacement therapy' OID='I.0017'>
+        <Question>
+          <TranslatedText xml:lang='en'>current use of hormone replacement therapy (except thyroid).</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0282402'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='blood pressure; medications' OID='I.0018'>
+        <Question>
+          <TranslatedText xml:lang='en'>current use of blood pressure medications and/or diuretics</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0005823'/>
+        <Alias Context='UMLS CUI [2]' Name='C0013227'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='supplement' OID='I.0019'>
+        <Question>
+          <TranslatedText xml:lang='en'>current use of flax seed supplement</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C2348609'/>
+      </ItemDef>
+      <ItemDef DataType='boolean' Name='clinical trial' OID='I.0020'>
+        <Question>
+          <TranslatedText xml:lang='en'>participation in any other clinical trial with an investigational agent within one month prior to randomization.</TranslatedText>
+        </Question>
+        <Alias Context='UMLS CUI [1]' Name='C0008976'/>
+      </ItemDef>
+    </MetaDataVersion>
+  </Study>
+</ODM>

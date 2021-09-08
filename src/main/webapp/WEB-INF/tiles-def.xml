@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+       <!-- TODO: If you need JQuery please comment it in -->
+       
+<tiles-definitions>
+    <definition name="main" template="/WEB-INF/layout/layout.jsp">
+        <put-attribute name="header" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="content" value="" />
+        <put-list-attribute name="css">
+            <!-- Basics -->
+            <add-attribute value="/css/jQuery/jquery-ui.min.css" type="string"/>
+            <add-attribute value="/css/jQuery/jquery-ui.structure.min.css" type="string"/>
+            <add-attribute value="/css/jQuery/jquery-ui.theme.min.css" type="string"/>
+            <add-attribute value="/css/bootstrap/bootstrap.min.css" type="string"/>
+            <add-attribute value="/css/bootstrap/bootstrap-theme.min.css" type="string"/>
+            <add-attribute value="/css/bootstrap/fileinput.min.css" type="string"/>
+        </put-list-attribute>
+        <put-list-attribute name="js">
+            <!-- JQuery Basics -->
+            <add-attribute value="/js/helper/localization.js" type= "string"/>
+            <add-attribute value="/js/helper/base64toBlob.js" type= "string"/>
+            <add-attribute value="/js/websockets/sockjs-0.3.4.js" type= "string"/>
+            <add-attribute value="/js/websockets/stomp.js" type= "string"/>
+            <add-attribute value="/js/jQuery/jquery-3.5.1.min.js" type= "string"/>
+            <add-attribute value="/js/jQuery/jquery-ui.min.js" type= "string"/>
+            <add-attribute value="/js/jQuery/fileinput.min.js" type= "string"/>
+            <add-attribute value="/js/jquery.base64.min.js" type= "string"/>
+        </put-list-attribute>
+    </definition>
+</tiles-definitions>

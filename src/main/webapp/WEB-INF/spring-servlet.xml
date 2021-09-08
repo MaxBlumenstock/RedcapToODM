@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:websocket="http://www.springframework.org/schema/websocket"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/security
+       http://www.springframework.org/schema/security/spring-security.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.2.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+       http://www.springframework.org/schema/websocket
+       http://www.springframework.org/schema/websocket/spring-websocket.xsd">
+ 
+    <!-- Use @Component annotations for bean definitions -->
+    <context:component-scan base-package="de.imi.odmtoolbox.config"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.validator"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.auth"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.controller"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.cron"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.model"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.dao"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.dao.impl"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.library"/>
+    <context:component-scan base-package="de.imi.odmtoolbox.convert.websocket"/>
+    
+    <!-- Reference the odmtoolbox porperty file to make it accessible in each class -->    
+    <util:properties id="propertyConfigurer" location="classpath*:odmtoolbox.properties"/>
+    <context:property-placeholder properties-ref="propertyConfigurer" />
+    
+    <!-- Use @Controller annotations for MVC controller definitions -->
+    <mvc:annotation-driven />
+    <!--<bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+        <property name="alwaysUseFullPath" value="true"/>
+    </bean>-->
+    <context:annotation-config />
+    <task:annotation-driven/>
+
+    <bean id="tilesConfigurer" 
+          class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/tiles-def.xml</value>
+            </list>
+        </property>
+    </bean>   
+  
+    <!-- View resolver -->
+    <bean class=
+     "org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+ 
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="200000000"/>
+    </bean>
+</beans>
